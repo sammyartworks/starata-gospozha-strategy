@@ -8,7 +8,7 @@
 <meta name="description" content="Стратегия на Moshe Agency за Старата Госпожа, ноември 2026 до януари 2027">
 <link rel="icon" href="data:,">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500;1,600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500;1,600&display=swap">
 <style>
 /* Moshe Agency x Старата Госпожа. Нощно синьо, жълтък, крем и бордо като червилото ѝ. Oswald за заглавията, Montserrat за текста. */
 :root{--paper:#fff;--cream:#F7F1E3;--ink:#1C1C1E;--mid:#5E5A55;--navy:#1D3D55;--yolk:#F6DB71;--bordo:#7A1E2C;--line:#E6DFD0;--serif:'Oswald','Arial Narrow',sans-serif;--sans:'Montserrat',Arial,sans-serif;color-scheme:light}
@@ -317,6 +317,57 @@ h3{font-size:20px;font-weight:700;line-height:1.3}
 @media (max-width:1180px){.brand{display:none}.cur{width:200px}}
 @media (max-width:1100px){.nums{grid-template-columns:repeat(3,minmax(0,1fr))}.g6,.castg{grid-template-columns:repeat(3,minmax(0,1fr))}.mb,.mb.n9{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media (max-width:860px){.g5>*,.g5>:nth-child(n+4){grid-column:auto}.split,.g3,.g4,.g5,.g2,.qs,.tl,.chips,.chips4,.chips2{grid-template-columns:minmax(0,1fr)}.g6,.trg{grid-template-columns:repeat(2,minmax(0,1fr))}.mosaic .pic{grid-column:span 6}.strip{height:240px}.bar{grid-template-columns:1fr 70px}.bar i{grid-column:1/3;grid-row:2}.mb:not(.n9){grid-template-columns:repeat(2,minmax(0,1fr))}.page{gap:32px;padding-block:52px}.cov{grid-template-columns:minmax(0,1fr)}.cov>img{grid-column:1;width:100%;height:auto}.row5{grid-template-columns:repeat(2,minmax(0,1fr))}.row5>:last-child:nth-child(odd){grid-column:1/3}.sumg{grid-template-columns:minmax(0,1fr)}.mo{gap:32px;padding-top:32px}.cov .wrap{grid-column:1;grid-row:2;padding-inline:24px;padding-block:32px 40px}.cur{display:none}.srow{grid-template-columns:minmax(0,1fr);gap:20px}.srow.rev .rp{order:0}.rp .pic,.rp .ill,.rp>img{aspect-ratio:16/9}.tl>div{padding:0 0 32px 46px}.tl>div:before{top:4px}.tl>div:after,.tl>div:last-child:after{top:34px;bottom:4px;left:10px;right:auto;width:3px;height:auto;background:var(--bordo)}.tl>div:last-child{padding-bottom:0}.tl>div:last-child:after{display:none}.g4.ph2{grid-template-columns:repeat(2,minmax(0,1fr))}.nums{grid-template-columns:repeat(2,minmax(0,1fr))}.mg,.steps{grid-template-columns:minmax(0,1fr)}.steps li:after{display:none}.locs,.fonts{grid-template-columns:minmax(0,1fr)}.sw{grid-template-columns:repeat(2,minmax(0,1fr))}.sf span{font-size:22px}.fa{font-size:64px}}
+
+/* Стил B „Стара книга“: спокоен бял фон, цветът е акцент, Cormorant Garamond за заглавията */
+/* === Спокойствие: един фон, цветът е акцент, не плоча === */
+.soft,.band,.bandb{background:var(--paper)!important;color:var(--ink)!important}
+.band .eb,.bandb .eb{color:var(--bordo)!important}.band .lead,.bandb .lead,.band .tl p,.band .cap{color:var(--mid)!important}
+.band .rm,.bandb .rm,.band .more>summary,.bandb .more>summary{color:var(--bordo)!important;border-color:var(--bordo)!important}
+.band .rm:hover,.bandb .rm:hover{background:var(--bordo)!important;color:#fff!important}
+.band .tl>div:before,.bandb .tl>div:before{background:var(--bordo)!important;box-shadow:none!important}.band .tl>div:after,.bandb .tl>div:after{background:var(--line)!important}
+.band .tl p.k,.band a{color:var(--bordo)!important}.bandb .card.n{background:var(--navy)!important}
+.band .tbar button{background:var(--cream)!important;color:var(--ink)!important}.band .tbar button[aria-selected=true]{background:var(--navy)!important;color:#fff!important}
+.soft .card{background:var(--cream)}.soft .chip{background:var(--cream)}.soft .tbar button{background:var(--cream)}
+.ptw+.ptw>section>.page{border-top:1px solid var(--line)}
+.tick{background:none!important;color:var(--navy)!important;border-block:1px solid var(--line);font-size:16px!important;padding-block:10px!important}
+/* корица: общ скелет */
+.cov{display:block!important;background:var(--paper)!important;color:var(--ink)!important;overflow:visible}
+.cov:after{display:none!important}
+.cov .cw{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:56px;align-items:end;padding-block:96px 56px}
+.cov .cf{margin:0}.cov .cf img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
+.cov .lead{color:var(--mid)!important}
+h1,h2{text-transform:none!important}
+@media (max-width:860px){.cov .cw{grid-template-columns:minmax(0,1fr);gap:28px;padding-block:64px 32px}.cov .cf{order:-1}}
+/* B: Стара книга. Cormorant Garamond, центрирана корица като начало на глава */
+:root{--serif:'Cormorant Garamond',Georgia,serif}
+h1,h2{font-weight:600!important;color:var(--navy);letter-spacing:0!important}
+.rt h1,.rt h2{font-size:clamp(32px,3vw,44px)!important;line-height:1.05!important}
+.cov .cw{grid-template-columns:minmax(0,1fr)!important;justify-items:center;text-align:center;gap:28px!important;padding-block:110px 64px!important;max-width:980px}
+.cov .ct{display:flex;flex-direction:column;align-items:center;gap:12px}
+.cov .num{order:-1;font-family:var(--sans)!important;font-size:13px!important;font-weight:700!important;letter-spacing:.3em;color:var(--bordo)!important;line-height:1!important;display:flex;align-items:center;gap:16px}
+.cov .num:before,.cov .num:after{content:"";width:56px;height:1px;background:var(--bordo)}
+.cov .kick{display:none}
+.cov h1{font-size:clamp(52px,6vw,88px)!important;font-style:italic;font-weight:500!important;line-height:1!important}
+.cov .lead{max-width:44ch;font-size:20px!important}
+.cov .cf{width:100%;order:2}.cov .cf img{border-radius:50% 50% 4px 4px/34% 34% 4px 4px;aspect-ratio:16/9!important}
+.sn{font-family:var(--serif)!important;font-size:22px!important;font-style:italic;font-weight:600!important;letter-spacing:0!important;text-transform:none!important;color:var(--bordo)!important;gap:10px!important}
+.sn b{font-style:normal;font-family:var(--sans);font-size:12px;font-weight:700!important;letter-spacing:.1em;border:1px solid var(--bordo);border-radius:99px;padding:3px 9px;align-self:center}
+.eb{color:var(--navy);letter-spacing:.14em;font-size:13px}
+@media (max-width:860px){.cov .cf{order:-1}.cov .cf img{aspect-ratio:4/3!important}}
+
+/* фото секции: светъл текст върху снимката */
+.hero h1,.hero h2{color:#fff!important;font-style:italic;font-weight:500!important}
+.hero .lead{color:#F1EDE4!important}
+/* по-малки заглавия: без главни букви, Cormorant с тегло */
+.h3l,.tl .t,.sf h3,.wk h3,.dur h3,.mh b,.gh b,.steps h3,.sumg h3,.tick{text-transform:none!important;font-weight:600!important;letter-spacing:0!important}
+.tick{font-style:italic;font-size:19px!important}
+/* резюме на темите: без кремави кутии, тънка линия и курсивен номер */
+.sumg button{background:none!important;border:0!important;border-top:1px solid var(--line)!important;border-radius:0!important;padding:18px 0 0!important}
+.sumg .n{font-style:italic;color:var(--bordo)!important;font-size:40px!important}
+.sumg h3{color:var(--navy);font-size:28px!important}
+@media (max-width:860px){.cov .cf img{border-radius:50% 50% 4px 4px/30% 30% 4px 4px;aspect-ratio:4/3!important}}
+.sumg button:hover{background:none!important}.sumg button:hover h3{color:var(--bordo)}
+.hero .sn{color:var(--yolk)!important}.hero .sn b{border-color:var(--yolk)}
 </style>
 </head>
 <body>
@@ -459,7 +510,7 @@ const SUM=[['brand','Откъде тръгваме','Името го има, н�
 const TICK=['Госпожата знае най-добре','Госпожата събира всички','Две локации. Една Госпожа.','Перлите са по желание. Бухтите са задължителни.','Първо хапни, после ще говорим'];
 const t=TICK.map(x=>`<span>${x}</span>`).join('');
 const intro=hero('h_cafe.jpg','Концепция: Госпожата на кафе на софийска тераса','Moshe Agency, стратегия за ноември 2026 до януари 2027','Старата Госпожа','От познато брънч място към любим повод да се събираме.',AI).replace('chap hero','chap hero home').replace('loading="lazy" ','')+`<div class="tick" aria-hidden="true"><div>${t+t+t+t}</div></div>`+page(`<div class="head"><p class="eb">Стратегията накратко</p><h1>Госпожата събира всички. И знае най-добре.</h1><p class="lead">Сменяме гласа на ресторант с гласа на героиня: с мнение, обноски и остър език. Три фокуса: един профил, Клубът на пенсионера и кетърингът.</p></div><div class="sumg">${SUM.map(([id,t,p],i)=>`<button data-to="${id}"><span class="n">${i+1}</span><h3>${t}</h3><p>${p}</p></button>`).join('')}</div>`,'stmt');
-const chapter=(p,i)=>`<section class="cov" id="${p.id}"><img loading="lazy" src="${I('cov_'+p.id+'.jpg')}" alt=""><div class="wrap"><p class="num">${String(i+1).padStart(2,"0")}</p><h1>${p.t}</h1><p class="lead">${p.d}</p></div></section>`+p.s.map((id,j)=>`<div class="ptw" data-n="${i+1}.${j+1}" data-t="${byId(id)[1]}">${sec(id).replace(/<div class="wrap( page)?">/,m=>m+`<p class="sn"><b>${i+1}.${j+1}</b>${byId(id)[1]}</p>`)}</div>`).join('');
+const chapter=(p,i)=>`<section class="cov" id="${p.id}"><div class="wrap cw"><div class="ct"><p class="num">${String(i+1).padStart(2,"0")}</p><h1>${p.t}</h1><p class="lead">${p.d}</p></div><figure class="cf"><img loading="lazy" src="${I('cov_'+p.id+'.jpg')}" alt=""></figure></div></section>`+p.s.map((id,j)=>`<div class="ptw" data-n="${i+1}.${j+1}" data-t="${byId(id)[1]}">${sec(id).replace(/<div class="wrap( page)?">/,m=>m+`<p class="sn"><b>${i+1}.${j+1}</b>${byId(id)[1]}</p>`)}</div>`).join('');
 m.innerHTML=intro+PAGES.map(chapter).join('')+sec('end');
 // Кратък слой: всяка секция е един ред със снимка, номер, заглавие и едно изречение. Всичко останало е в „Прочети още“.
 document.querySelectorAll('.ptw>section>.page').forEach((pg,i)=>{const sn=pg.querySelector(':scope>.sn');
