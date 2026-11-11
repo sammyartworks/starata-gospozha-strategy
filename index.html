@@ -8,88 +8,88 @@
 <meta name="description" content="Стратегия на Moshe Agency за Старата Госпожа, ноември 2026 до януари 2027">
 <link rel="icon" href="data:,">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Jost:wght@400;500;600;700;800&family=Marck+Script&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500;1,600&display=swap">
 <style>
-/* Moshe Agency x Старата Госпожа. Нощно синьо, жълтък, крем и бордо като червилото ѝ. Prata за заглавията, Montserrat за текста. */
-:root{--paper:#fff;--cream:#F7F1E3;--ink:#1C1C1E;--mid:#5E5A55;--navy:#1D3D55;--yolk:#F6DB71;--bordo:#7A1E2C;--line:#E6DFD0;--serif:'Playfair Display',Georgia,serif;--hand:'Marck Script',cursive;--sans:'Jost',Arial,sans-serif;color-scheme:light}
+/* Moshe Agency x Старата Госпожа. Нощно синьо, жълтък, крем и бордо като червилото ѝ. Oswald за заглавията, Montserrat за текста. */
+:root{--paper:#fff;--cream:#F7F1E3;--ink:#1C1C1E;--mid:#5E5A55;--navy:#1D3D55;--yolk:#F6DB71;--bordo:#7A1E2C;--line:#E6DFD0;--serif:'Oswald','Arial Narrow',sans-serif;--sans:'Montserrat',Arial,sans-serif;color-scheme:light}
 *{box-sizing:border-box}
 html{scroll-behavior:auto}
-html,body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.55}
+html,body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:18px;line-height:1.6}
 h1,h2,h3,p,ul,ol{margin:0;padding:0}ul,ol{list-style:none}
 img{display:block;width:100%;height:100%;object-fit:cover}
 button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 button:focus-visible,a:focus-visible{outline:3px solid var(--bordo);outline-offset:2px}
 a{color:var(--bordo);font-weight:600}
-.wrap{max-width:1200px;margin:0 auto;padding-left:max(24px,env(safe-area-inset-left,0px));padding-right:max(24px,env(safe-area-inset-right,0px))}
+.wrap{max-width:1320px;margin:0 auto;padding-left:max(24px,env(safe-area-inset-left,0px));padding-right:max(24px,env(safe-area-inset-right,0px))}
 .page{padding-block:72px;display:flex;flex-direction:column;gap:40px}
 
 /* Типография */
-h1 em,h1 i{font-style:italic}h1{font-style:italic}h1,h2{font-family:var(--serif);font-weight:500;line-height:1.14;letter-spacing:-.005em;text-wrap:balance}
-h1{font-size:clamp(34px,4.6vw,58px)}
-h2{font-size:clamp(25px,2.8vw,36px);max-width:26ch}
-h3{font-size:17px;font-weight:700;line-height:1.3}
-.h3l{font-family:var(--serif);font-weight:400;font-size:22px;line-height:1.25}
-.eb{font-size:13px;font-weight:600;color:var(--bordo)}
-.lead{font-size:clamp(17px,1.4vw,19px);color:var(--mid);max-width:60ch;line-height:1.5}
+h1,h2{font-family:var(--serif);font-weight:600;line-height:1.08;letter-spacing:.005em;text-transform:uppercase;text-wrap:balance}
+h1{font-size:clamp(40px,5.4vw,72px)}
+h2{font-size:clamp(30px,3.4vw,46px);max-width:24ch}
+h3{font-size:20px;font-weight:700;line-height:1.3}
+.h3l{font-family:var(--serif);font-weight:500;font-size:28px;line-height:1.2;text-transform:uppercase;letter-spacing:.01em}
+.eb{font-size:15px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--bordo)}
+.lead{font-size:clamp(19px,1.6vw,23px);color:var(--mid);max-width:60ch;line-height:1.5}
 .head{display:flex;flex-direction:column;gap:12px}
-.cap{font-size:14px;color:var(--mid);max-width:80ch}
-.q{font-family:var(--hand);font-size:clamp(24px,2.3vw,31px);line-height:1.25}
-.big{font-family:var(--serif);font-size:28px;line-height:1}
+.cap{font-size:16px;color:var(--mid);max-width:80ch}
+.q{font-family:var(--sans);font-style:italic;font-weight:600;font-size:clamp(22px,2vw,28px);line-height:1.3}
+.big{font-family:var(--serif);font-size:36px;line-height:1}
 
 /* Блокове */
 .split{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
 .pic{position:relative;border-radius:4px;overflow:hidden;background:var(--cream)}
-.tag{position:absolute;right:10px;bottom:10px;z-index:2;font-size:12px;color:#fff;background:rgba(28,28,30,.6);padding:3px 9px;border-radius:99px}
+.tag{position:absolute;right:10px;bottom:10px;z-index:2;font-size:13px;color:#fff;background:rgba(28,28,30,.6);padding:3px 9px;border-radius:99px}
 .r34{aspect-ratio:3/4}.r11{aspect-ratio:1}.r169{aspect-ratio:16/9}.r45{aspect-ratio:4/5}
 .list{display:flex;flex-direction:column}
-.list li{padding:12px 0;border-bottom:1px solid var(--line);font-size:17px;font-weight:500}
-.g2,.g3,.g4,.g5,.g6{display:grid;gap:16px}
-.g2{grid-template-columns:repeat(2,minmax(0,1fr))}.g3{grid-template-columns:repeat(3,minmax(0,1fr))}.g4{grid-template-columns:repeat(4,minmax(0,1fr))}.g5{grid-template-columns:repeat(5,minmax(0,1fr))}.g6{grid-template-columns:repeat(6,minmax(0,1fr))}
-.card{background:var(--cream);border-radius:4px;padding:20px 22px;display:flex;flex-direction:column;gap:8px;min-width:0}
-.card p{color:var(--mid);font-size:15px}
+.list li{padding:14px 0;border-bottom:1px solid var(--line);font-size:19px;font-weight:500}
+.g2,.g3,.g4,.g5,.g6{display:grid;gap:20px}
+.g2{grid-template-columns:repeat(2,minmax(0,1fr))}.g3{grid-template-columns:repeat(3,minmax(0,1fr))}.g4{grid-template-columns:repeat(4,minmax(0,1fr))}.g5{grid-template-columns:repeat(6,minmax(0,1fr))}.g5>*{grid-column:span 2}.g5>:nth-child(n+4){grid-column:span 3}.g6{grid-template-columns:repeat(6,minmax(0,1fr))}
+.card{background:var(--cream);border-radius:4px;padding:26px 28px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.card p{color:var(--mid);font-size:17px}
 .card.b{background:var(--navy);color:#fff}.card.b p{color:#E3EAEF}
 .card.n{background:var(--navy);color:#fff}.card.n p{color:#E3EAEF}
-.soft{background:var(--cream)}.soft .card{background:#fff}
+.soft{background:var(--cream)}.soft .card{background:#fff}.soft .card.b,.soft .card.n{background:var(--navy)}
 .band{background:var(--navy);color:#fff}.band .eb{color:var(--yolk)}.band .lead{color:#DCE5EB}
 .bandb{background:var(--bordo);color:#fff}.bandb .eb{color:var(--yolk)}.bandb .card.n{background:rgba(0,0,0,.22)}
 .tile{display:flex;flex-direction:column;gap:10px;min-width:0}
-.tile p{color:var(--mid);font-size:15px}
+.tile p{color:var(--mid);font-size:17px}
 .qs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px 40px}.qs .q:nth-child(3n+1){color:var(--yolk)}
 .mosaic{display:grid;grid-template-columns:repeat(12,1fr);gap:10px}
-.mosaic .pic{grid-column:span 3;aspect-ratio:4/5}
-.av{width:64px;height:64px;border-radius:50%;overflow:hidden;background:var(--ink);flex:none;border:3px solid #fff;box-shadow:0 0 0 1px var(--bordo)}
+.mosaic .pic{grid-column:span 4;aspect-ratio:4/5}
+.av{width:84px;height:84px;border-radius:50%;overflow:hidden;background:var(--ink);flex:none;border:3px solid #fff;box-shadow:0 0 0 1px var(--bordo)}
 .comp{display:flex;gap:16px;align-items:center}
 .chips{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
-.chip{background:var(--cream);border-radius:4px;padding:13px 16px;font-weight:500;font-size:15px;line-height:1.35}
+.chip{background:var(--cream);border-radius:4px;padding:16px 20px;font-weight:500;font-size:17px;line-height:1.35}
 .soft .chip{background:#fff}
 .chip.hi{background:var(--navy);color:#fff}
 .g2.one{grid-template-columns:minmax(0,1fr)}
 .chips4{grid-template-columns:repeat(4,minmax(0,1fr))}.chips2{grid-template-columns:repeat(2,minmax(0,1fr))}
 .tl{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
 .tl>div{border-top:3px solid var(--bordo);padding-top:16px;display:flex;flex-direction:column;gap:8px}
-.tl .t{font-family:var(--serif);font-weight:400;font-size:24px}
+.tl .t{font-family:var(--serif);font-weight:500;font-size:30px;text-transform:uppercase}
 .tl p{color:var(--mid)}.tl p.k{color:var(--bordo);font-weight:700}.tl p.r{color:var(--ink);font-weight:600}
-.bar{display:grid;grid-template-columns:220px 1fr 80px;gap:16px;align-items:center;font-weight:500;font-size:15px}
+.bar{display:grid;grid-template-columns:220px 1fr 80px;gap:16px;align-items:center;font-weight:500;font-size:17px}
 .bar i{display:block;height:26px;border-radius:2px}
-.total{font-family:var(--serif);font-size:30px;color:var(--bordo);margin-top:6px}
+.total{font-family:var(--serif);font-size:40px;color:var(--bordo);margin-top:6px}
 .sb{display:flex;flex-direction:column;gap:12px;padding-block:26px;border-top:1px solid var(--line)}
 .sbh{display:flex;flex-wrap:wrap;gap:6px 18px;align-items:baseline;justify-content:space-between}
-.sbx{display:flex;flex-wrap:wrap;gap:22px;align-items:flex-start}.sbw{overflow-x:auto;max-width:100%;-webkit-overflow-scrolling:touch}.strip{height:230px;width:auto;max-width:none;border-radius:4px}
+.sbx{display:flex;flex-wrap:wrap;gap:22px;align-items:flex-start}.sbw{overflow-x:auto;max-width:100%;-webkit-overflow-scrolling:touch}.strip{height:340px;width:auto;max-width:none;border-radius:4px}
 .shots{display:flex;flex-direction:column;gap:6px;flex:1;min-width:240px}
-.shots li{font-size:15px;font-weight:500}.shots b{color:var(--bordo);margin-right:6px}
+.shots li{font-size:17px;font-weight:500}.shots b{color:var(--bordo);margin-right:6px}
 .trg{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px 14px}
-.trg p{font-size:14px;font-weight:500}.trg b{color:var(--bordo)}
-.mb{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px}.mb img{aspect-ratio:4/5;width:100%;height:auto;object-fit:cover;border-radius:4px;background:var(--cream)}
-.mb.n9{grid-template-columns:repeat(9,minmax(0,1fr))}
-.stmt h1{font-size:clamp(28px,3.4vw,44px);max-width:22ch}
+.trg p{font-size:16px;font-weight:500}.trg b{color:var(--bordo)}
+.mb{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.mb img{aspect-ratio:4/5;width:100%;height:auto;object-fit:cover;border-radius:4px;background:var(--cream)}
+.mb.n9{grid-template-columns:repeat(5,minmax(0,1fr))}
+.stmt h1{font-size:clamp(34px,4.2vw,56px);max-width:22ch}
 
 /* Навигация */
 .nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:#fff;border-bottom:1px solid var(--line)}
 .nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;height:64px}
-.brand{font-weight:800;font-size:14px;white-space:nowrap;display:flex;align-items:center}
+.brand{font-weight:800;font-size:15px;white-space:nowrap;display:flex;align-items:center}
 .tn{display:flex;gap:2px;overflow-x:auto;flex:1;min-width:0;scrollbar-width:none}.tn::-webkit-scrollbar{display:none}
 .tn button:first-child{margin-left:auto}.tn button:last-child{margin-right:auto}
-.tn button{white-space:nowrap;padding:7px 10px;border-radius:99px;font-weight:600;font-size:13px;flex:none}
+.tn button{white-space:nowrap;padding:8px 12px;border-radius:99px;font-weight:600;font-size:14px;flex:none}
 .tn button:focus-visible{outline-offset:-3px}
 .tn button:hover{background:var(--cream)}.tn button.on{background:var(--navy);color:#fff}
 .prog{position:absolute;bottom:-1px;left:0;height:2px;background:var(--bordo);width:0}
@@ -97,13 +97,13 @@ h3{font-size:17px;font-weight:700;line-height:1.3}
 /* Корици */
 .hero,.cov{position:relative;display:flex;align-items:flex-end;color:#fff;background:var(--navy);overflow:hidden}
 .hero{min-height:70vh}.hero.home{min-height:calc(100vh - 64px)}
-.cov{min-height:46vh;scroll-margin-top:64px}
-.hero>img,.cov>img{position:absolute;inset:0}
+.cov{min-height:max(72vh,420px);scroll-margin-top:64px}
+.hero>img,.cov>img{position:absolute;inset:0;object-position:center 40%}#visual>img{object-position:center 85%}
 .hero:after,.cov:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(18,32,44,.92) 0,rgba(18,32,44,.8) 45%,rgba(18,32,44,.2) 85%)}
 .hero .wrap,.cov .wrap{position:relative;z-index:1;width:100%;padding-block:56px;display:flex;flex-direction:column;gap:14px}
 .hero .eb,.cov .eb{color:var(--yolk)}.hero .lead,.cov .lead{color:#F1EDE4}
-.cov h1{font-size:clamp(30px,4vw,50px)}
-.tick{background:var(--bordo);color:#fff;overflow:hidden;white-space:nowrap;font-family:var(--serif);font-size:17px;padding-block:14px}
+.cov h1{font-size:clamp(44px,6vw,84px)}
+.tick{background:var(--bordo);color:#fff;overflow:hidden;white-space:nowrap;font-family:var(--serif);font-size:20px;text-transform:uppercase;letter-spacing:.04em;padding-block:14px}
 .tick div{display:inline-block;animation:tk 60s linear infinite}
 .tick span{margin-right:56px}
 @keyframes tk{to{transform:translateX(-50%)}}
@@ -112,18 +112,18 @@ h3{font-size:17px;font-weight:700;line-height:1.3}
 /* Лента на темата */
 .pt{position:sticky;top:calc(64px + env(safe-area-inset-top,0px));z-index:10;background:var(--navy);color:#fff}
 .pt .wrap{display:flex;align-items:baseline;gap:16px;padding-block:11px}
-.pn{font-family:var(--serif);font-size:20px;color:var(--yolk);font-variant-numeric:tabular-nums;white-space:nowrap}
-.pc{font-size:12px;color:#B9C7D1}
-.ptt{font-size:16px;font-weight:700;line-height:1.2}
+.pn{font-family:var(--serif);font-size:24px;color:var(--yolk);font-variant-numeric:tabular-nums;white-space:nowrap}
+.pc{font-size:14px;color:#B9C7D1}
+.ptt{font-size:19px;font-weight:700;line-height:1.2}
 .pm{display:flex;flex-wrap:wrap;gap:2px 12px;align-items:baseline}
 .ptw .chap{scroll-margin-top:120px}
 
 .foot{background:var(--ink);color:#fff;padding-block:32px}
-.foot .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-weight:600;font-size:14px}
+.foot .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-weight:600;font-size:16px}
 
 @media (max-width:1180px){.brand{display:none}}
-@media (max-width:1100px){.g5,.g6{grid-template-columns:repeat(3,minmax(0,1fr))}.mb,.mb.n9{grid-template-columns:repeat(3,minmax(0,1fr))}}
-@media (max-width:860px){.split,.g3,.g4,.g5,.g2,.qs,.tl,.chips,.chips4,.chips2{grid-template-columns:minmax(0,1fr)}.g6,.trg{grid-template-columns:repeat(2,minmax(0,1fr))}.mosaic .pic{grid-column:span 6}.bar{grid-template-columns:1fr 70px}.bar i{grid-column:1/3;grid-row:2}.mb:not(.n9){grid-template-columns:repeat(2,minmax(0,1fr))}.page{gap:32px;padding-block:52px}.cov{min-height:40vh}.pt .wrap{gap:12px;padding-block:9px}.pc{display:none}}
+@media (max-width:1100px){.g6{grid-template-columns:repeat(3,minmax(0,1fr))}.mb,.mb.n9{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:860px){.g5>*,.g5>:nth-child(n+4){grid-column:auto}.split,.g3,.g4,.g5,.g2,.qs,.tl,.chips,.chips4,.chips2{grid-template-columns:minmax(0,1fr)}.g6,.trg{grid-template-columns:repeat(2,minmax(0,1fr))}.mosaic .pic{grid-column:span 6}.strip{height:240px}.bar{grid-template-columns:1fr 70px}.bar i{grid-column:1/3;grid-row:2}.mb:not(.n9){grid-template-columns:repeat(2,minmax(0,1fr))}.page{gap:32px;padding-block:52px}.cov{min-height:40vh}.pt .wrap{gap:12px;padding-block:9px}.pc{display:none}}
 </style>
 </head>
 <body>
@@ -189,7 +189,7 @@ const PAGES=[
 {id:'catering-page',t:'Кетъринг',d:'Брънчът тръгва на път: офиси, празници, домове',s:['catering','cater2','caterextra','adscater']},
 {id:'social',t:'Съдържание',d:'Рубриките, TikTok и хората около нас',s:['content','tiktok','genz','tags']},
 {id:'team',t:'Одобрените концепции',d:'Идеите и референциите, които екипът избра след брейнсторма',s:['approved','boards','board']},
-{id:'plan',t:'Бюджет и старт',d:'Рекламата, снимачните дни, първите 90 дни и как мерим',s:['ads','shoots','days','kpi','fixfirst','annex']}];
+{id:'plan',t:'Бюджет и старт',d:'Рекламата, снимачните дни, първите 90 дни и как мерим',s:['ads','cast','shoots','days','kpi','fixfirst','annex']}];
 
 const SHOTS=['Общ план: ретро автомобилът идва към нас','Едър план: емблемата на капака','През задното стъкло: ръкавицата и перлите','Макро: пудриерата показва само устните ѝ','Колелото спира пред Оборище 18','Токчето ѝ стъпва на тротоара','В гръб: панорама от токчетата до шапката','Входът: хората обръщат глави','Вътре: следваме я в гръб през залата','Отгоре: бялата ръкавица влиза от ъгъла','Чашата и следата от червило','Финал: сама на светло място'];
 
@@ -234,6 +234,7 @@ const CH=[
 ['board','От FigJam',()=>page(head('','Кадрите, които избрахме','Чужди примери, само за посока.')+MB.map(([t,l])=>`<div class="head">${sub(t)}<div class="mb ${l.length==9?'n9':''}">${l.map(f=>`<img loading="lazy" src="${I(f+'.jpg')}" alt="${t}">`).join('')}</div></div>`).join(''),'soft')],
 
 ['ads','Бюджетът',()=>page(head('','2 000 € на месец, разделени на две равни половини','Само Meta и TikTok, както е в договора. Половината е за TikTok, а другата половина за Meta. Ресторантите и кетърингът също делят по равно.')+`<div class="head">${sub('Декември')}${[['TikTok Spark Ads, ресторанти',550,'#1D3D55'],['TikTok „Брънч в кутия“, кетъринг',450,'#6F8BA0'],['Meta локален обхват, ресторанти',300,'#1D3D55'],['Meta „един профил“',150,'#6F8BA0'],['Meta лийд форма, кетъринг',550,'#7A1E2C']].map(([t,v,c])=>`<div class="bar"><span>${t}</span><i style="width:${v/550*100}%;background:${c}"></i><span>${v} €</span></div>`).join('')}<p class="total">Общо 2 000 €: 1 000 € TikTok и 1 000 € Meta</p></div><div class="head">${sub('Януари')}${[['TikTok Spark Ads, ресторанти и клубът',550,'#1D3D55'],['TikTok кетъринг за офисите',450,'#6F8BA0'],['Meta локален обхват и старт на клуба',350,'#1D3D55'],['Meta „един профил“',100,'#6F8BA0'],['Meta лийд форма, кетъринг',550,'#7A1E2C']].map(([t,v,c])=>`<div class="bar"><span>${t}</span><i style="width:${v/550*100}%;background:${c}"></i><span>${v} €</span></div>`).join('')}</div>`+cards([['Към реални действия','Покупки, посещения и запитвания вместо само посещения на сайта.'],['Точна аудитория','Досега фокусът беше върху жени над 55. Тестваме градската публика от 25 до 40 години.'],['Без алкохол в рекламата','Meta и TikTok ограничават рекламата на алкохол, затова в платените версии мимозата става лимонада.']],'g3')+`<p class="cap">Бюджетът се плаща директно от ресторанта. Започваме с тази разбивка и я сменяме според резултатите, като половините остават равни.</p>`)],
+['cast','Кастинг',()=>page(head('','Хората пред камерата','Моделите за предстоящите снимки. Госпожата остава без лице, затова дамите над 65 играят нейните приятелки, внуците са момичетата.')+`<div class="g2"><div class="card"><p class="eb">Приятелките · дами 65+</p><h3>10 подбрани</h3>${chips(['Юлиана','Ирена','Елисавета','Вера','Мариана','Искра','Цветелина','Бисерка','Анна','Соня'],'chips chips2')}<p>Интервюта с истории от миналото, „Любовни съвети от баба ти“, шопинг по Витошка, „Доведи баба си“.</p></div><div class="card"><p class="eb">Внуците · момичета 22 до 28</p><h3>4 подбрани, търсим още</h3>${chips(['Радина','Елица','Йолана','Моника'],'chips chips2')}<p>Пробват новото меню с бабите, улични интервюта, кадрите „Внуците трупат стаж“.</p></div></div>`+sub('Какво търсим при новите внуци')+chips(['Живеят или работят в София','Естествени пред камера, говорят свободно','Профил с истински приятели, не само реклами','Брънч, кафе или храна вече са в профила им','Различни типове: офис, студентка, творец','Свободни в събота сутрин за снимки'])+`<p class="cap">Пълният списък с профили е в таблицата MOSHE_clients_ideas, лист „Старата Госпожа“.</p>`,'soft')],
 ['shoots','Снимачните дни',()=>page(head('','Какво снимаме кога','По договора имаме 1 до 2 снимачни дни на месец за бранда. Затова подреждаме идеите по месеци.')+tl([['Ноември','Загадката: ръката, бележките, следите. Кетъринг кадрите за „Госпожата прекъсва срещата“. Каталожни снимки на пакетите.'],['Декември','Трейлърът на Оборище. Коледният кетъринг и „Много ръце, един поднос“. Вестникът на Госпожата.'],['Януари','„Доведи баба си“ и филмът на клуба. Рубриките за TikTok.']])+`<p class="cap">Останалите концепции и сторибордове са банка с идеи за следващите месеци. Отразяване на събитие извън снимачните дни е по ценоразпис.</p>`,'soft')],
 ['days','Първите 90 дни',()=>page(head('','Три месеца, три стъпки')+`<div class="tl">${[['Ноември','Основата','Стратегията се одобрява около 18.11. Снимаме, настройваме рекламните профили, пускаме първата загадка и в края на месеца кетъринга.','p100.jpg'],['Декември','Госпожата проговаря','Сливането на профилите с трейлъра, рубриките в TikTok, коледният кетъринг до 19.12.','p113.jpg'],['Януари','Интересът става навик','Клубът на пенсионера отваря, кампании за делниците от 9:00 до 11:00, оценка на резултатите.','p115.jpg']].map(([a,b,c,i])=>`<div><h3 class="t">${a}</h3><p class="k">${b}</p><p>${c}</p>${pic(i,a,'r169')}</div>`).join('')}</div><div class="head">${sub('Какво ни трябва от ресторантите')}${li(['Един човек за бързо съгласуване и един за кетъринг запитванията','Силните и слабите часове, честите оплаквания','Данни за посещения и продажби','Правилата за кетъринга, картата и отстъпката над 65','Писмено съгласие за героинята и изпълнителя'])}</div>`)],
 ['kpi','Как мерим',()=>page(head('','Какво искаме да видим след 90 дни','Конкретните числа уточняваме след достъп до профилите и продажбите.')+cards([['Един профил','Колко от последователите на двата профила минават в общия.'],['TikTok','Гледания, средно време и ръст от 1,2 хил. последователи.','b'],['Кетъринг','Брой запитвания, цена на запитване, колко стават поръчки.'],['Клубът','Брой членове и колко се връщат до 30 дни.'],['Отзиви','Отговор на всеки отзив в Google и TripAdvisor до 24 часа. Витоша в Google от 3,8 към 4,0.'],['Ресторантите','Посещения по адрес, маршрути, обаждания, средна сметка.']],'g3'),'soft')],
