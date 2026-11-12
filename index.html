@@ -590,6 +590,12 @@ main{padding-left:60px}
 @media (max-width:991px){.orig .o-aud.o-c{grid-template-columns:repeat(6,minmax(0,1fr))}.orig .o-aud.o-c .o-seg{grid-column:span 3}.orig .o-aud.o-c .o-seg:nth-child(4){grid-column:span 3}}
 @media (max-width:640px){.orig .o-aud.o-c{grid-template-columns:1fr}.orig .o-aud.o-c .o-seg,.orig .o-aud.o-c .o-seg:nth-child(4){grid-column:auto}}
 .orig .o-pvg{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.orig .o-pvg img{height:auto;border-radius:14px;width:100%}
+
+/* 3.1 карти: без застъпване, височина по съдържанието */
+.orig .o-aud.o-c{align-items:start;margin-bottom:56px!important}
+.orig .o-aud.o-c .o-seg{height:auto!important;min-height:0!important;position:relative}
+.orig .o-aud.o-c .o-seg>.o-pic{aspect-ratio:auto!important;height:auto!important;position:relative;overflow:hidden;flex:none}
+.orig .o-aud.o-c .o-seg>.o-pic img{position:static!important;display:block;width:100%!important;height:auto!important;aspect-ratio:4/5;object-fit:cover}
 </style>
 </head>
 <body>
